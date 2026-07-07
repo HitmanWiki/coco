@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { Send, FileText, ArrowUp, RefreshCw, Star } from "lucide-react";
 
 export default function Footer() {
-  const contractAddress = "0x0d1cfdb753f03500f5ae1f565dc3823367630061";
+  const contractAddress = "0xa93d86Af16fe83F064E3C0e2F3d129F7B7b002b0";
 
   const handleScrollTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });

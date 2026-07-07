@@ -5,7 +5,7 @@ export default function Tokenomics() {
   const metrics = [
     {
       title: "TOTAL SUPPLY",
-      value: "1,000,000,000",
+      value: "420,690,000,000",
       sub: "1 Billion Fixed Supply",
       desc: "No mint function. No inflation. Fully locked supply allocation on the Ethereum network.",
       icon: <Coins size={20} className="text-gray-300" />,
