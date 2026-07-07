@@ -24,7 +24,7 @@ export default function HowToBuy() {
     {
       num: "04",
       title: "SWAP ETH FOR $COCORO",
-      desc: "Paste the $COCORO contract address: 0x0d1cfdb753f03500f5ae1f565dc3823367630061 into the selection box. Since COCORO has 0% taxes, adjust your slippage to standard low rates (0.5% - 1%) and complete the swap!",
+      desc: "Paste the $COCORO contract address: 0xa93d86Af16fe83F064E3C0e2F3d129F7B7b002b0 into the selection box. Since COCORO has 0% taxes, adjust your slippage to standard low rates (0.5% - 1%) and complete the swap!",
       icon: <ArrowRightLeft size={18} />,
     },
   ];
@@ -98,7 +98,7 @@ export default function HowToBuy() {
         {/* CTA section bottom */}
         <div className="mt-16 text-center">
           <motion.a
-            href="https://app.uniswap.org/#/swap?inputCurrency=eth&outputCurrency=0x0d1cfdb753f03500f5ae1f565dc3823367630061"
+            href="https://app.uniswap.org/#/swap?inputCurrency=eth&outputCurrency=0xa93d86Af16fe83F064E3C0e2F3d129F7B7b002b0"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-white text-[#050505] font-display font-extrabold hover:bg-[#e5e7eb] transition-all text-sm"
