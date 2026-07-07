@@ -1,0 +1,6 @@
+{
+  "name": "COCORO",
+  "description": "The official website for COCORO ($COCORO), the black Shiba Inu on Ethereum representing the true heart and soul of the meme community.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
