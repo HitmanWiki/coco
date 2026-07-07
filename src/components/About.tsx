@@ -151,7 +151,7 @@ export default function About({ onPlayBark }: AboutProps) {
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full bg-white/10 overflow-hidden border border-white/15">
                     <img 
-                      src="/images/cocoro_logo_1783396817862.jpg" 
+                      src="../assets/images/cocoro_logo_1783396817862.jpg" 
                       alt="Kabosumama Profile" 
                       className="w-full h-full object-cover"
                       referrerPolicy="no-referrer"
@@ -171,25 +171,25 @@ export default function About({ onPlayBark }: AboutProps) {
               <div className="grid grid-cols-2 gap-3.5">
                 {[
                   {
-                    src: "/images/cocoro_feed_cute_1783398610614.jpg",
+                    src: "../assets/images/cocoro_feed_cute_1783398610614.jpg",
                     caption: "First day at the park! Cocoro's smile melted my heart. 🐾🍃",
                     likes: "254.2K",
                     date: "July 2024"
                   },
                   {
-                    src: "/images/cocoro_feed_owner_1783398621883.jpg",
+                    src: "../assets/images/cocoro_feed_owner_1783398621883.jpg",
                     caption: "A sunny stroll with my beloved Cocoro under the neighborhood cherry blossoms. 🌸🐕",
                     likes: "189.5K",
                     date: "April 2025"
                   },
                   {
-                    src: "/images/cocoro_feed_sleepy_1783398633334.jpg",
+                    src: "../assets/images/cocoro_feed_sleepy_1783398633334.jpg",
                     caption: "Sweet dreams, Cocoro. Our home is complete again. 😴💖",
                     likes: "312.8K",
                     date: "September 2024"
                   },
                   {
-                    src: "/images/cocoro_feed_nature_1783398644064.jpg",
+                    src: "../assets/images/cocoro_feed_nature_1783398644064.jpg",
                     caption: "Standing proud like a samurai on the bench. True soul of Japan. 🇯🇵🐕‍🦺",
                     likes: "420.1K",
                     date: "May 2025"
