@@ -6,7 +6,7 @@ export default function Tokenomics() {
     {
       title: "TOTAL SUPPLY",
       value: "420,690,000,000",
-      sub: "1 Billion Fixed Supply",
+      sub: " Fixed Supply",
       desc: "No mint function. No inflation. Fully locked supply allocation on the Robinhood Chain network.",
       icon: <Coins size={20} className="text-[#00c805]" />,
     },
