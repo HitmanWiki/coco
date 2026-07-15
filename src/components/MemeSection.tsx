@@ -13,9 +13,9 @@ export default function MemeSection() {
   ];
 
   const row2 = [
-    { src: "/images/cocoro_feed_nature_1783398644064.jpg", tag: "CHERRY BLOSSOM 💮" },
-    { src: "/images/cocoro_feed_cute_1783398610614.jpg", tag: "HAPPY SMILE 😊" },
-    { src: "/images/cocoro_feed_owner_1783398621883.jpg", tag: "LOVING FAMILY 💖" },
+    { src: "/images/cocoro_feed_nature_new_1784088421717.jpg", tag: "CHERRY BLOSSOM 💮" },
+    { src: "/images/cocoro_feed_cute_new_1784088353161.jpg", tag: "HAPPY SMILE 😊" },
+    { src: "/images/cocoro_feed_owner_new_1783398621883.jpg", tag: "LOVING FAMILY 💖" },
     { src: "/images/cocoro_feed_sleepy_1783398633334.jpg", tag: "COZY NAP 💤" },
   ];
 

@@ -14,7 +14,7 @@ export default function Journey() {
       title: "Adoption & New Dawn",
       date: "July 2024",
       desc: "Following the passing of Kabosu (the original Doge), Atsuko Sato's home welcomed a cute black Shiba Inu puppy named Cocoro. This marked the continuation of the Doge family legacy.",
-      thumbnail: "/images/cocoro_feed_cute_1783398610614.jpg",
+      thumbnail: "/images/cocoro_feed_cute_new_1784088353161.jpg",
       subtitles: [
         "Atsuko Sato welcomes the playful black puppy Cocoro to her home...",
         "Cocoro meets his big sister Neiro, instantly bonding with her.",
@@ -27,7 +27,7 @@ export default function Journey() {
       title: "Playtime with Neiro",
       date: "Late 2024",
       desc: "Cocoro and Neiro playing together in Atsuko Sato's beautiful garden, completing the Holy Trinity of dog culture alongside Kabosu.",
-      thumbnail: "/images/cocoro_feed_owner_1783398621883.jpg",
+      thumbnail: "/images/cocoro_feed_owner_new_1783398621883.jpg",
       subtitles: [
         "Cocoro rolls on the grass, teasing his sister Neiro with a squeaky toy.",
         "Sato-san watches happily, sharing this beautiful memory on her blog.",

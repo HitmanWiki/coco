@@ -171,13 +171,13 @@ export default function About({ onPlayBark }: AboutProps) {
               <div className="grid grid-cols-2 gap-3.5">
                 {[
                   {
-                    src: "/images/cocoro_feed_cute_1783398610614.jpg",
+                    src: "/images/cocoro_feed_cute_new_1784088353161.jpg",
                     caption: "First day at the park! Cocoro's smile melted my heart. 🐾🍃",
                     likes: "254.2K",
                     date: "July 2024"
                   },
                   {
-                    src: "/images/cocoro_feed_owner_1783398621883.jpg",
+                    src: "/images/cocoro_feed_owner_new_1783398621883.jpg",
                     caption: "A sunny stroll with my beloved Cocoro under the neighborhood cherry blossoms. 🌸🐕",
                     likes: "189.5K",
                     date: "April 2025"
@@ -189,7 +189,7 @@ export default function About({ onPlayBark }: AboutProps) {
                     date: "September 2024"
                   },
                   {
-                    src: "/images/cocoro_feed_nature_1783398644064.jpg",
+                    src: "/images/cocoro_feed_nature_new_1784088421717.jpg",
                     caption: "Standing proud like a samurai on the bench. True soul of Japan. 🇯🇵🐕‍🦺",
                     likes: "420.1K",
                     date: "May 2025"
