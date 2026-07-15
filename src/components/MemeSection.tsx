@@ -37,7 +37,7 @@ export default function MemeSection() {
             viewport={{ once: true }}
           >
             <Layers size={12} />
-            SHIBA MEME PORTAL
+            COCORO MEME PORTAL
           </motion.div>
           <motion.h2
             className="font-display font-extrabold text-3xl sm:text-5xl text-white tracking-tight mb-4"

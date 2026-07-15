@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ArrowDown, ArrowUp, Sparkles, Volume2, ShieldAlert } from "lucide-react";
 // @ts-ignore
-import cocoroLogo from "../assets/images/cocoro_logo_rh_1784086237306.png";
+import cocoroLogo from "../assets/images/cocoro_logo_rh_1784086237306.jpg";
 
 interface WelcomeScreenProps {
   onComplete: () => void;
@@ -198,7 +198,7 @@ export default function WelcomeScreen({ onComplete, onPlayBark }: WelcomeScreenP
           </div>
 
           {/* Center Stage: The Expanding Logo and Energy Waves */}
-          <div className="flex-1 flex flex-col items-center justify-center relative w-full px-4">
+          <div className="flex-1 flex items-center justify-center relative w-full px-4 overflow-visible">
             {/* Absolute background text */}
             <div className="absolute select-none font-display font-black text-[12vw] text-white/[0.01] tracking-tighter leading-none pointer-events-none text-center">
               COCORO
@@ -276,9 +276,12 @@ export default function WelcomeScreen({ onComplete, onPlayBark }: WelcomeScreenP
               <div className="absolute -inset-4 border border-[#00c805]/25 rounded-full animate-spin-slow pointer-events-none" />
               <div className="absolute -inset-8 border border-dashed border-white/10 rounded-full pointer-events-none" />
             </motion.div>
+          </div>
 
+          {/* Bottom Bar: Interactive Scroll Dots, Description & Guidance */}
+          <div className="w-full max-w-md mx-auto px-6 pb-6 pt-2 flex flex-col items-center gap-4 relative z-10">
             {/* Overlay description text synced with scroll steps */}
-            <div className="mt-16 text-center max-w-md relative z-10 h-28 flex flex-col justify-center">
+            <div className="text-center w-full h-24 flex flex-col justify-center">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={step}
@@ -286,26 +289,23 @@ export default function WelcomeScreen({ onComplete, onPlayBark }: WelcomeScreenP
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -direction * 15 }}
                   transition={{ duration: 0.35, ease: "easeOut" }}
-                  className="space-y-2"
+                  className="space-y-1.5"
                 >
-                  <div className="text-xs font-mono tracking-[0.25em] text-[#00c805] font-extrabold uppercase">
+                  <div className="text-[10px] font-mono tracking-[0.25em] text-[#00c805] font-extrabold uppercase">
                     {step < 5 ? stepsInfo[step]?.title : "LAUNCH SUCCESS"}
                   </div>
-                  <h1 className="font-display font-black text-2xl tracking-tight text-white uppercase">
+                  <h1 className="font-display font-black text-xl sm:text-2xl tracking-tight text-white uppercase">
                     {step === 0 ? "SCROLL TO ENTER COCORO" : `STEP 0${step} UNLOCKED`}
                   </h1>
-                  <p className="text-gray-400 text-xs sm:text-sm font-sans px-4">
+                  <p className="text-gray-400 text-xs font-sans px-4 line-clamp-2">
                     {step < 5 ? stepsInfo[step]?.desc : "Loading high-frequency Robinhood Chain dApp..."}
                   </p>
                 </motion.div>
               </AnimatePresence>
             </div>
-          </div>
 
-          {/* Bottom Bar: Interactive Scroll Dots & Guidance */}
-          <div className="w-full max-w-md mx-auto px-6 py-8 flex flex-col items-center gap-4 relative z-10">
             {/* Progress Dots */}
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 mt-2">
               {[0, 1, 2, 3, 4].map((index) => (
                 <div
                   key={index}

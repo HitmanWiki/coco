@@ -10,7 +10,7 @@ interface HeroProps {
 
 export default function Hero({ onPlayBark }: HeroProps) {
   const [copied, setCopied] = useState(false);
-  const contractAddress = "0x571228e0b4d359a83f7223e143ec36b2ccbde3d2";
+  const contractAddress = "0x235F36205EB00eb0A3a978112b29F3bD09130AAa";
 
   const handleCopy = () => {
     navigator.clipboard.writeText(contractAddress);

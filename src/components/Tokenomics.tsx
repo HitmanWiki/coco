@@ -13,7 +13,7 @@ export default function Tokenomics() {
     {
       title: "BUY / SELL TAX",
       value: "1% / 1%",
-      sub: "Zero Slippage Burden",
+      sub: "Low Slippage Burden",
       desc: "No fees taken on trading. Pure community buying and selling. Maximum trade efficiency on DEXs.",
       icon: <Star size={20} className="text-[#00c805]" />,
     },
