@@ -21,49 +21,49 @@ export default function Merchandise() {
     {
       id: "prod-1",
       name: "COCORO Sovereign Hoodie",
-      desc: "An ultra-premium heavy weight, drop-shoulder cotton hoodie. Features gold-stitched embroidery of the legendary Black Shiba.",
+      desc: "An ultra-premium heavy weight, drop-shoulder cotton hoodie. Features gold-stitched embroidery of the legendary Black Shiba in Robinhood archer gear.",
       priceUSD: 49.99,
-      image: "/images/cocoro_merch_hoodie_1783398535929.jpg",
+      image: "/images/cocoro_rh_hoodie.jpg",
       rating: 5,
     },
     {
       id: "prod-2",
       name: "COCORO Shadow Baseball Cap",
-      desc: "Minimalist, unstructured 6-panel washed cotton cap. Styled with an exquisite custom-knit white crest.",
+      desc: "Minimalist, unstructured 6-panel washed cotton cap. Styled with an exquisite custom-knit green arrow crest.",
       priceUSD: 24.99,
-      image: "/images/cocoro_merch_cap_1783398546753.jpg",
+      image: "/images/cocoro_rh_cap.jpg",
       rating: 4.9,
     },
     {
       id: "prod-3",
       name: "COCORO Zen Matte Mug",
-      desc: "Heavyweight ceramic mug with a custom satin-matte glaze. Adorned with a beautiful glowing neon portrait of Cocoro.",
+      desc: "Heavyweight ceramic mug with a custom satin-matte glaze. Adorned with a beautiful glowing neon archer portrait of Cocoro.",
       priceUSD: 18.99,
-      image: "/images/cocoro_merch_mug_1783398583807.jpg",
+      image: "/images/cocoro_rh_mug.jpg",
       rating: 5,
     },
     {
       id: "prod-4",
       name: "COCORO Eclipse Stainless Tumbler",
-      desc: "A double-wall insulated matte black tumbler featuring a beautiful laser-etched minimalist golden portrait of Cocoro.",
+      desc: "A double-wall insulated matte black tumbler featuring a beautiful laser-etched minimalist green portrait of Cocoro.",
       priceUSD: 29.99,
-      image: "/images/cocoro_merch_tumbler_1783399474427.jpg",
+      image: "/images/cocoro_rh_tumbler.jpg",
       rating: 5,
     },
     {
       id: "prod-5",
       name: "COCORO Cyberpunk Street Tee",
-      desc: "Crafted with premium heavy-weight cotton. Showcases a high-contrast neon streetwear graphic print of Cocoro.",
+      desc: "Crafted with premium heavy-weight cotton. Showcases a high-contrast neon green Robinhood streetwear graphic print of Cocoro.",
       priceUSD: 34.99,
-      image: "/images/cocoro_merch_tee_1783399492009.jpg",
+      image: "/images/cocoro_rh_tee.jpg",
       rating: 4.9,
     },
     {
       id: "prod-6",
       name: "COCORO Kawaii Mascot Plushie",
-      desc: "The ultimate desk companion. An adorable, highly detailed custom-embroidered plush toy of the beloved Black Shiba.",
+      desc: "The ultimate desk companion. An adorable, highly detailed custom-embroidered plush toy of the beloved Black Shiba with a tiny archer cowl.",
       priceUSD: 39.99,
-      image: "/images/cocoro_merch_plushie_1783399507990.jpg",
+      image: "/images/cocoro_rh_plushie.jpg",
       rating: 5,
     },
   ];
@@ -153,7 +153,7 @@ export default function Merchandise() {
             <ShoppingBag size={15} />
             VIEW BAG
             {cart.length > 0 && (
-              <span className="absolute -top-1.5 -right-1.5 w-5 h-5 rounded-full bg-emerald-500 border border-black text-white font-mono text-[9px] flex items-center justify-center font-bold animate-bounce">
+              <span className="absolute -top-1.5 -right-1.5 w-5 h-5 rounded-full bg-[#00c805] border border-black text-white font-mono text-[9px] flex items-center justify-center font-bold animate-bounce">
                 {cart.reduce((a, b) => a + b.quantity, 0)}
               </span>
             )}
@@ -346,14 +346,14 @@ export default function Merchandise() {
                     <div className="space-y-2">
                       <h4 className="font-display font-black text-white text-lg">Simulating Web3 Checkout</h4>
                       <p className="text-xs text-gray-400 font-sans max-w-xs leading-relaxed">
-                        Connecting to your Ethereum wallet to sign authorization. Converting prices to $COCORO token balances...
+                        Connecting to your Robinhood Chain wallet to sign authorization. Converting prices to $COCORO token balances...
                       </p>
                     </div>
                   </div>
                 ) : (
                   <div className="h-full flex flex-col items-center justify-center text-center space-y-6">
                     <motion.div
-                      className="w-16 h-16 rounded-full bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-3xl"
+                      className="w-16 h-16 rounded-full bg-[#00c805]/10 border border-[#00c805]/30 flex items-center justify-center text-[#00c805] text-3xl"
                       initial={{ scale: 0.5 }}
                       animate={{ scale: 1 }}
                       transition={{ type: "spring", stiffness: 200, damping: 10 }}
@@ -363,7 +363,7 @@ export default function Merchandise() {
                     <div className="space-y-2">
                       <h4 className="font-display font-black text-white text-lg">Simulated Order Received!</h4>
                       <p className="text-xs text-gray-400 font-sans max-w-xs leading-relaxed">
-                        Your transaction was processed successfully. Real merchandise claims will open when the community takeover roadmap milestones are achieved.
+                        Your transaction was processed successfully. Real merchandise claims will open when the official Robinhood Chain launch roadmap milestones are achieved.
                       </p>
                     </div>
                   </div>
@@ -382,7 +382,7 @@ export default function Merchandise() {
                       <span className="text-gray-400 font-sans font-medium flex items-center gap-1">
                         <Sparkles size={12} className="text-yellow-400" /> Web3 $COCORO Cost
                       </span>
-                      <span className="text-emerald-400 font-mono font-extrabold text-base">
+                      <span className="text-[#00c805] font-mono font-extrabold text-base">
                         {totalCOCORO.toLocaleString()} $COCORO
                       </span>
                     </div>
@@ -390,7 +390,7 @@ export default function Merchandise() {
 
                   <button
                     onClick={startCheckout}
-                    className="w-full py-4 rounded-xl bg-white text-black font-display font-black text-sm hover:bg-gray-200 transition-all flex items-center justify-center gap-2 cursor-pointer"
+                    className="w-full py-4 rounded-xl bg-[#00c805] text-black font-display font-black text-sm hover:bg-[#00e006] hover:shadow-[0_0_15px_rgba(0,200,5,0.4)] transition-all flex items-center justify-center gap-2 cursor-pointer"
                   >
                     <CreditCard size={15} />
                     SIMULATE PURCHASE WITH $COCORO

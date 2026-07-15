@@ -11,7 +11,7 @@ export default function Chart() {
 
   return (
     <section id="chart" className="py-24 bg-[#050505] bg-grid-pattern relative">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-white/[0.01] rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-[#00c805]/[0.02] rounded-full blur-[140px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-12">
@@ -39,7 +39,7 @@ export default function Chart() {
             {/* Refresh Button */}
             <motion.button
               onClick={handleRefresh}
-              className="px-4 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-gray-300 hover:text-white transition-colors border border-white/10 text-xs font-mono flex items-center gap-2"
+              className="px-4 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-gray-300 hover:text-[#00c805] transition-colors border border-white/10 text-xs font-mono flex items-center gap-2"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               title="Refresh Chart Feed"
@@ -50,10 +50,10 @@ export default function Chart() {
 
             {/* External Link */}
             <motion.a
-              href="https://dexscreener.com/ethereum/0x0d1cfdb753f03500f5ae1f565dc3823367630061"
+              href="https://dexscreener.com/robinhood/0x571228e0b4d359a83f7223e143ec36b2ccbde3d2"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2.5 rounded-xl bg-white text-[#050505] hover:bg-[#e5e7eb] font-display font-bold text-xs flex items-center gap-2 transition-all"
+              className="px-4 py-2.5 rounded-xl bg-[#00c805] text-black hover:bg-[#00e006] hover:shadow-[0_0_15px_rgba(0,200,5,0.4)] font-display font-bold text-xs flex items-center gap-2 transition-all"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
@@ -74,7 +74,7 @@ export default function Chart() {
           {/* IFrame Overlay Loading indicator fallback */}
           <div className="absolute inset-0 bg-[#050505] z-0 flex items-center justify-center">
             <div className="flex flex-col items-center gap-3 text-center">
-              <div className="w-8 h-8 rounded-full border-2 border-white/10 border-t-white animate-spin" />
+              <div className="w-8 h-8 rounded-full border-2 border-white/10 border-t-[#00c805] animate-spin" />
               <span className="font-mono text-xs text-gray-500">SYNCHRONIZING WITH DEXSCREENER ENGINE...</span>
             </div>
           </div>
@@ -82,7 +82,7 @@ export default function Chart() {
           {/* Secure embedded chart */}
           <iframe
             key={reloadKey}
-            src="https://dexscreener.com/ethereum/0x0d1cfdb753f03500f5ae1f565dc3823367630061?embed=1&theme=dark"
+            src="https://dexscreener.com/robinhood/0x571228e0b4d359a83f7223e143ec36b2ccbde3d2?embed=1&theme=dark"
             className="w-full h-[550px] sm:h-[650px] relative z-10 border-0 bg-transparent"
             allow="fullscreen"
             title="COCORO Live Dexscreener Chart"

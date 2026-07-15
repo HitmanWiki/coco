@@ -7,14 +7,14 @@ interface AboutProps {
 }
 
 const WISDOM_QUOTES = [
-  "Other dogs chase cars. COCORO charts Ethereum blocks.",
+  "Other dogs chase cars. COCORO charts Robinhood Chain blocks.",
   "The black Shiba thrives in the shadows. Dark mode active, diamond paws locked.",
-  "Shiba Inu is the heart, Shibarium is the mind, COCORO is the soul.",
-  "Born in the shadows of Ethereum, destined to unite the community.",
+  "Shiba Inu is the heart, Robinhood is the mind, COCORO is the soul.",
+  "Born in the shadows of decentralization, destined to unite the community.",
   "Taxes are for the weak. 0% buy/sell is the true samurai way.",
   "A loyal companion on the blockchain, COCORO always stays with the pack.",
   "In a sea of green and red candles, COCORO is pure silver and dark-mode elegance.",
-  "0x0d1c... the sacred digits of the black shiba, etched in immutable code.",
+  "0x5712... the sacred digits of the black shiba, etched in immutable code.",
   "Loyalty isn't built on promise. It's built on a renounced contract.",
   "True strength doesn't bark loud. It remains silent until the breakout."
 ];
@@ -84,16 +84,16 @@ export default function About({ onPlayBark }: AboutProps) {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
             >
-              As the very first black Shiba Inu in the legendary Doge family, Cocoro completes the **Holy Trinity** of decentralized doge culture. In Japanese, Cocoro means <span className="text-white font-semibold font-mono">Heart, Mind, and Soul</span>. Where others see just a pet, our community sees the ultimate symbol of unyielding spirit and pure decentralized energy on Ethereum.
+              As the very first black Shiba Inu in the legendary Doge family, Cocoro completes the **Holy Trinity** of decentralized doge culture. In Japanese, Cocoro means <span className="text-white font-semibold font-mono">Heart, Mind, and Soul</span>. Where others see just a pet, our community sees the ultimate symbol of unyielding spirit and pure decentralized energy on <span className="text-[#00c805] font-semibold">Robinhood Chain</span>.
             </motion.p>
 
             <motion.p
-              className="font-sans text-gray-400 leading-relaxed text-base sm:text-lg border-l-2 border-emerald-500/30 pl-4 bg-emerald-500/[0.01] py-2 rounded-r-lg"
+              className="font-sans text-gray-400 leading-relaxed text-base sm:text-lg border-l-2 border-[#00c805]/30 pl-4 bg-[#00c805]/[0.01] py-2 rounded-r-lg"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
             >
-              🚀 <span className="text-white font-semibold">100% Community Takeover (CTO):</span> After the initial developers walked away, the global community united to claim stewardship. Today, $COCORO is governed by a decentralized, volunteer-led CTO council of blockchain veterans, creative designers, and marketing experts. Zero dev control, zero taxes, and a multi-sig protected treasury guarantee a safe, trustless future.
+              🚀 <span className="text-white font-semibold">Official Robinhood Chain Launch:</span> Designed for absolute security and fairness, the $COCORO launch introduces the premier black Shiba Inu to the Robinhood Chain ecosystem. Today, $COCORO is guided by a decentralized, volunteer-led governing council of blockchain veterans, creative designers, and marketing experts. Zero team control, 0% trading taxes, and a multi-sig protected treasury guarantee a safe, decentralized future.
             </motion.p>
 
             {/* Core Values Bento Row */}
@@ -151,7 +151,7 @@ export default function About({ onPlayBark }: AboutProps) {
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full bg-white/10 overflow-hidden border border-white/15">
                     <img 
-                      src="/images/cocoro_logo_1783396817862.jpg" 
+                      src="/images/cocoro_logo_rh.jpg" 
                       alt="Kabosumama Profile" 
                       className="w-full h-full object-cover"
                       referrerPolicy="no-referrer"
@@ -162,7 +162,7 @@ export default function About({ onPlayBark }: AboutProps) {
                     <span className="font-mono text-[10px] text-gray-500">@kabosumama ● Verified Creator</span>
                   </div>
                 </div>
-                <span className="font-mono text-[9px] text-emerald-400 font-bold bg-emerald-400/5 px-2.5 py-0.5 rounded-full border border-emerald-400/10">
+                <span className="font-mono text-[9px] text-[#00c805] font-bold bg-[#00c805]/5 px-2.5 py-0.5 rounded-full border border-[#00c805]/10">
                   LIVE FEED
                 </span>
               </div>
@@ -239,7 +239,7 @@ export default function About({ onPlayBark }: AboutProps) {
 
                   <motion.button
                     onClick={handleNextQuote}
-                    className="py-2 px-4 rounded-xl bg-white text-black font-display font-black text-xs hover:bg-[#e5e7eb] transition-all inline-flex items-center gap-1.5"
+                    className="py-2 px-4 rounded-xl bg-[#00c805] text-black font-display font-black text-xs hover:bg-[#00e006] transition-all inline-flex items-center gap-1.5"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >

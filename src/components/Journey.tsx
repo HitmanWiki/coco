@@ -37,13 +37,13 @@ export default function Journey() {
       youtubeWatchUrl: "https://www.youtube.com/watch?v=6i-2_1f9D4c"
     },
     {
-      title: "Ascension to Ethereum",
+      title: "Ascension to Robinhood Chain",
       date: "2025 - 2026",
-      desc: "Cocoro's spirit transitions to the decentralized world of Web3, sparking an organic community takeover on Ethereum that renounced ownership and locked liquidity forever.",
-      thumbnail: "/images/cocoro_meme_astronaut_1783398504204.jpg",
+      desc: "Cocoro's spirit transitions to the decentralized world of Web3, sparking an organic, fair-launched token deployment on Robinhood Chain that renounced contract ownership and locked liquidity forever.",
+      thumbnail: "/images/cocoro_rh_rocket.jpg",
       subtitles: [
-        "The $COCORO token is fair launched on Uniswap...",
-        "After developers exit, a passionate global community unites for a full Takeover.",
+        "The $COCORO token is fair launched on Robinhood Chain...",
+        "With complete decentralization, a passionate global community unites to support $COCORO.",
         "The Doge Dynasty is fully complete: Kabosu, Neiro, and COCORO!",
       ],
       videoUrl: "https://www.youtube.com/embed/p917mC8e5S8",

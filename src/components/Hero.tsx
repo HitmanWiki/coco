@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import { Copy, Check, Shield, Flame, Percent, Wallet, ArrowUpRight } from "lucide-react";
 // @ts-ignore
-import cocoroLogo from "../assets/images/cocoro_logo_1783396817862.jpg";
+import cocoroLogo from "../assets/images/cocoro_logo_rh_1784086237306.jpg";
 
 interface HeroProps {
   onPlayBark: () => void;
@@ -10,7 +10,7 @@ interface HeroProps {
 
 export default function Hero({ onPlayBark }: HeroProps) {
   const [copied, setCopied] = useState(false);
-  const contractAddress = "0xa93d86Af16fe83F064E3C0e2F3d129F7B7b002b0";
+  const contractAddress = "0x571228e0b4d359a83f7223e143ec36b2ccbde3d2";
 
   const handleCopy = () => {
     navigator.clipboard.writeText(contractAddress);
@@ -21,8 +21,8 @@ export default function Hero({ onPlayBark }: HeroProps) {
   return (
     <section className="relative min-h-screen pt-32 pb-20 flex flex-col items-center justify-center overflow-hidden bg-[#050505] bg-grid-pattern">
       {/* Background radial glow */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-white/5 rounded-full blur-[120px] pointer-events-none animate-pulse-slow" />
-      <div className="absolute bottom-1/4 left-1/4 w-[300px] h-[300px] bg-white/3 rounded-full blur-[90px] pointer-events-none" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#00c805]/5 rounded-full blur-[120px] pointer-events-none animate-pulse-slow" />
+      <div className="absolute bottom-1/4 left-1/4 w-[300px] h-[300px] bg-[#00c805]/3 rounded-full blur-[90px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -35,11 +35,11 @@ export default function Hero({ onPlayBark }: HeroProps) {
               transition={{ duration: 0.5 }}
             >
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/15 text-xs text-gray-300 font-mono">
-                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                THE TRUE HEART OF ETHEREUM
+                <span className="w-2 h-2 rounded-full bg-[#00c805] animate-pulse" />
+                THE TRUE HEART OF ROBINHOOD
               </div>
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-xs text-emerald-400 font-mono font-bold uppercase tracking-wider">
-                100% CTO ACTIVE
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#00c805]/10 border border-[#00c805]/20 text-xs text-[#00c805] font-mono font-bold uppercase tracking-wider">
+                OFFICIAL LAUNCH
               </div>
             </motion.div>
 
@@ -58,7 +58,7 @@ export default function Hero({ onPlayBark }: HeroProps) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              In Japanese, <span className="text-white font-semibold">COCORO (心)</span> means heart, mind, and soul. Meet the legendary black Shiba Inu—the sleek, unyielding guardian representing the ultimate spirit of decentralized meme culture.
+              In Japanese, <span className="text-white font-semibold">COCORO (心)</span> means heart, mind, and soul. Meet the legendary black Shiba Inu—now fair-launched on <span className="text-[#00c805] font-bold">Robinhood Chain</span>, representing the ultimate community-driven spirit of decentralized finance.
             </motion.p>
 
             {/* Contract Box */}
@@ -70,9 +70,9 @@ export default function Hero({ onPlayBark }: HeroProps) {
             >
               <div className="flex flex-col gap-2">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs text-gray-500 font-mono font-medium">CONTRACT ADDRESS (ETH)</span>
+                  <span className="text-xs text-gray-500 font-mono font-medium">CONTRACT ADDRESS (ROBINHOOD)</span>
                   {copied && (
-                    <span className="text-[10px] text-emerald-400 font-mono font-bold uppercase tracking-wider animate-bounce">
+                    <span className="text-[10px] text-[#00c805] font-mono font-bold uppercase tracking-wider animate-bounce">
                       COPIED TO CLIPBOARD!
                     </span>
                   )}
@@ -88,7 +88,7 @@ export default function Hero({ onPlayBark }: HeroProps) {
                     whileTap={{ scale: 0.95 }}
                     title="Copy Contract Address"
                   >
-                    {copied ? <Check size={16} className="text-emerald-400" /> : <Copy size={16} />}
+                    {copied ? <Check size={16} className="text-[#00c805]" /> : <Copy size={16} />}
                   </motion.button>
                 </div>
               </div>
@@ -102,14 +102,14 @@ export default function Hero({ onPlayBark }: HeroProps) {
               transition={{ duration: 0.6, delay: 0.4 }}
             >
               <motion.a
-                href={`https://app.uniswap.org/#/swap?inputCurrency=eth&outputCurrency=${contractAddress}`}
+                href="https://dexscreener.com/robinhood/0x571228e0b4d359a83f7223e143ec36b2ccbde3d2"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto px-8 py-4 rounded-xl bg-white text-[#050505] font-display font-extrabold text-base hover:bg-[#e5e7eb] transition-all flex items-center justify-center gap-2"
+                className="w-full sm:w-auto px-8 py-4 rounded-xl bg-[#00c805] text-black font-display font-extrabold text-base hover:bg-[#00e006] hover:shadow-[0_0_20px_rgba(0,200,5,0.4)] transition-all flex items-center justify-center gap-2"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
               >
-                BUY $COCORO
+                TRADE $COCORO
                 <ArrowUpRight size={18} />
               </motion.a>
 
@@ -188,10 +188,10 @@ export default function Hero({ onPlayBark }: HeroProps) {
               onClick={onPlayBark}
             >
               {/* Outer glow aura */}
-              <div className="absolute inset-0 bg-white/5 rounded-full blur-[30px] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute inset-0 bg-[#00c805]/20 rounded-full blur-[30px] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               
               {/* Actual image */}
-              <div className="w-full h-full rounded-full overflow-hidden border-2 border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.8)] relative">
+              <div className="w-full h-full rounded-full overflow-hidden border-2 border-[#00c805]/30 shadow-[0_20px_50px_rgba(0,c8,5,0.15)] relative">
                 <img
                   src={cocoroLogo}
                   alt="COCORO Coin 3D Render"
@@ -199,12 +199,12 @@ export default function Hero({ onPlayBark }: HeroProps) {
                   referrerPolicy="no-referrer"
                 />
                 {/* Floating shine effect */}
-                <div className="absolute inset-0 z-20 bg-gradient-to-tr from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 ease-out pointer-events-none" />
+                <div className="absolute inset-0 z-20 bg-gradient-to-tr from-transparent via-[#00c805]/20 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 ease-out pointer-events-none" />
               </div>
               
               {/* BARK indicator trigger */}
               <motion.div 
-                className="absolute -bottom-2 -right-2 bg-white text-[#050505] px-3 py-1.5 rounded-full text-xs font-mono font-bold border border-black shadow-lg"
+                className="absolute -bottom-2 -right-2 bg-[#00c805] text-black px-3 py-1.5 rounded-full text-xs font-mono font-bold border border-black shadow-lg"
                 animate={{ y: [0, -4, 0] }}
                 transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
               >

@@ -6,32 +6,32 @@ export default function HowToBuy() {
     {
       num: "01",
       title: "CREATE A WALLET",
-      desc: "Download MetaMask, Coinbase Wallet, or Phantom for free from the App Store or Google Play. For desktop users, install the Google Chrome extension to coordinate Web3 connections.",
+      desc: "Download MetaMask, Coinbase Wallet, or Rabby for free. Set up your wallet, write down your backup phrase securely, and connect to the Robinhood Chain network.",
       icon: <Wallet size={18} />,
     },
     {
       num: "02",
-      title: "GET SOME ETHEREUM",
-      desc: "Fund your wallet with Ethereum (ETH). You can purchase ETH directly inside your Web3 wallet, buy it on any reputable centralized exchange (like Coinbase or Binance), and transfer it to your public wallet address.",
+      title: "GET NETWORK TOKENS",
+      desc: "Fund your wallet with native tokens for Robinhood Chain. You can acquire these through supported bridges or exchanges and transfer them safely to your Web3 wallet address.",
       icon: <CirclePlus size={18} />,
     },
     {
       num: "03",
-      title: "CONNECT TO UNISWAP",
-      desc: "Navigate to Uniswap (app.uniswap.org). Connect your active wallet. Make sure you are connected to the Ethereum Mainnet network to execute the transaction safely.",
+      title: "CONNECT TO DEX",
+      desc: "Navigate to DexScreener or the supported swap client on Robinhood Chain. Connect your active wallet securely and make sure you select the correct chain network.",
       icon: <ExternalLink size={18} />,
     },
     {
       num: "04",
-      title: "SWAP ETH FOR $COCORO",
-      desc: "Paste the $COCORO contract address: 0xa93d86Af16fe83F064E3C0e2F3d129F7B7b002b0 into the selection box. Since COCORO has 0% taxes, adjust your slippage to standard low rates (0.5% - 1%) and complete the swap!",
+      title: "SWAP FOR $COCORO",
+      desc: "Paste the $COCORO contract address: 0x571228e0b4d359a83f7223e143ec36b2ccbde3d2 into the swap client. Since COCORO has 0% taxes, execute with standard low slippage (0.5% - 1%) and complete the swap!",
       icon: <ArrowRightLeft size={18} />,
     },
   ];
 
   return (
     <section id="how-to-buy" className="py-24 bg-[#0a0a0c] relative">
-      <div className="absolute bottom-0 right-0 w-[450px] h-[450px] bg-white/[0.01] rounded-full blur-[130px] pointer-events-none animate-pulse-slow" />
+      <div className="absolute bottom-0 right-0 w-[450px] h-[450px] bg-[#00c805]/[0.01] rounded-full blur-[130px] pointer-events-none animate-pulse-slow" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-20">
@@ -53,7 +53,7 @@ export default function HowToBuy() {
             How to Buy $COCORO
           </motion.h2>
           <p className="text-gray-500 font-sans text-sm sm:text-base max-w-xl mx-auto">
-            Secure your spot in the black Shiba pack on Ethereum in four simple and secure steps.
+            Secure your spot in the black Shiba pack on Robinhood Chain in four simple and secure steps.
           </p>
         </div>
 
@@ -98,14 +98,14 @@ export default function HowToBuy() {
         {/* CTA section bottom */}
         <div className="mt-16 text-center">
           <motion.a
-            href="https://app.uniswap.org/#/swap?inputCurrency=eth&outputCurrency=0xa93d86Af16fe83F064E3C0e2F3d129F7B7b002b0"
+            href="https://dexscreener.com/robinhood/0x571228e0b4d359a83f7223e143ec36b2ccbde3d2"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-white text-[#050505] font-display font-extrabold hover:bg-[#e5e7eb] transition-all text-sm"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-[#00c805] text-[#050505] font-display font-extrabold hover:bg-[#00e006] hover:shadow-[0_0_20px_rgba(0,200,5,0.4)] transition-all text-sm"
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
           >
-            SWAP DIRECTLY ON UNISWAP
+            TRADE ON DEXSCREENER
             <ExternalLink size={14} />
           </motion.a>
         </div>

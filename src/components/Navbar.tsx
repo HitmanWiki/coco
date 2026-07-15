@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Menu, X, ExternalLink, TrendingUp, Send } from "lucide-react";
 // @ts-ignore
-import cocoroLogo from "../assets/images/cocoro_logo_1783396817862.jpg";
+import cocoroLogo from "../assets/images/cocoro_logo_rh_1784086237306.jpg";
 
 interface NavbarProps {
   onPlayBark: () => void;
@@ -63,8 +63,8 @@ export default function Navbar({ onPlayBark }: NavbarProps) {
                 onClick={onPlayBark}
               >
                 COCORO
-                <span className="text-xs px-1.5 py-0.5 rounded-full bg-white/10 text-white font-mono font-medium">
-                  ETH
+                <span className="text-xs px-1.5 py-0.5 rounded-full bg-[#00c805]/10 border border-[#00c805]/20 text-[#00c805] font-mono font-medium">
+                  RH CHAIN
                 </span>
               </span>
             </div>
@@ -77,38 +77,38 @@ export default function Navbar({ onPlayBark }: NavbarProps) {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="font-sans font-medium text-sm text-gray-400 hover:text-white transition-colors py-1 relative group"
+                  className="font-sans font-medium text-sm text-gray-400 hover:text-[#00c805] transition-colors py-1 relative group"
                 >
                   {item.name}
-                  <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-white group-hover:w-full transition-all duration-300" />
+                  <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#00c805] group-hover:w-full transition-all duration-300" />
                 </a>
               ))}
             </div>
 
             <div className="flex items-center gap-3 border-l border-white/10 pl-6">
               <motion.a
-                href="https://x.com/cocoroblackshib"
+                href="https://x.com/cocororh"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 rounded-full flex items-center justify-center border border-white/10 text-gray-400 hover:text-white hover:border-white/20 transition-all"
+                className="w-8 h-8 rounded-full flex items-center justify-center border border-white/10 text-gray-400 hover:text-white hover:border-[#00c805]/40 hover:bg-[#00c805]/5 transition-all"
                 whileHover={{ y: -2 }}
               >
                 <span className="font-semibold text-xs font-mono">X</span>
               </motion.a>
               <motion.a
-                href="https://t.me/Cocoro_ethereum"
+                href="https://t.me/cocororh"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 rounded-full flex items-center justify-center border border-white/10 text-gray-400 hover:text-white hover:border-white/20 transition-all"
+                className="w-8 h-8 rounded-full flex items-center justify-center border border-white/10 text-gray-400 hover:text-white hover:border-[#00c805]/40 hover:bg-[#00c805]/5 transition-all"
                 whileHover={{ y: -2 }}
               >
                 <Send size={14} className="ml-[-1px] mt-[1px]" />
               </motion.a>
               <motion.a
-                href="https://dexscreener.com/ethereum/0x0d1cfdb753f03500f5ae1f565dc3823367630061"
+                href="https://dexscreener.com/robinhood/0x571228e0b4d359a83f7223e143ec36b2ccbde3d2"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-1.5 rounded-full bg-white text-[#050505] text-xs font-display font-bold hover:bg-[#e5e7eb] transition-all flex items-center gap-1.5"
+                className="px-4 py-1.5 rounded-full bg-[#00c805] text-black text-xs font-display font-bold hover:bg-[#00e006] hover:shadow-[0_0_15px_rgba(0,200,5,0.4)] transition-all flex items-center gap-1.5"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -153,19 +153,19 @@ export default function Navbar({ onPlayBark }: NavbarProps) {
               ))}
               <div className="pt-4 border-t border-white/5 flex items-center gap-4 px-3">
                 <a
-                  href="https://x.com/cocoroblackshib"
+                  href="https://x.com/cocororh"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm text-gray-300 hover:text-white"
+                  className="flex items-center gap-2 text-sm text-gray-300 hover:text-[#00c805]"
                 >
                   <span className="font-semibold text-sm font-mono bg-white/5 w-7 h-7 rounded-full flex items-center justify-center">X</span>
                   Twitter
                 </a>
                 <a
-                  href="https://t.me/Cocoro_ethereum"
+                  href="https://t.me/cocororh"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm text-gray-300 hover:text-white"
+                  className="flex items-center gap-2 text-sm text-gray-300 hover:text-[#00c805]"
                 >
                   <span className="bg-white/5 w-7 h-7 rounded-full flex items-center justify-center"><Send size={12} /></span>
                   Telegram
@@ -173,10 +173,10 @@ export default function Navbar({ onPlayBark }: NavbarProps) {
               </div>
               <div className="pt-2 px-3">
                 <a
-                  href="https://dexscreener.com/ethereum/0x0d1cfdb753f03500f5ae1f565dc3823367630061"
+                  href="https://dexscreener.com/robinhood/0x571228e0b4d359a83f7223e143ec36b2ccbde3d2"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-2.5 rounded-lg bg-white text-[#050505] font-display font-bold text-center text-sm flex items-center justify-center gap-2"
+                  className="w-full py-2.5 rounded-lg bg-[#00c805] text-black font-display font-bold text-center text-sm flex items-center justify-center gap-2"
                 >
                   <TrendingUp size={14} />
                   View Chart on Dexscreener

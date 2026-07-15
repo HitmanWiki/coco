@@ -3,8 +3,11 @@ import { Image, Layers, Sparkles } from "lucide-react";
 
 export default function MemeSection() {
   const row1 = [
-    { src: "/images/cocoro_meme_astronaut_1783398504204.jpg", tag: "TO THE MOON 🚀" },
-    { src: "/images/cocoro_meme_king_1783398518285.jpg", tag: "SHIBA KING 👑" },
+    { src: "/images/cocoro_logo_rh.jpg", tag: "ROBINHOOD MASCOT 🏹" },
+    { src: "/images/cocoro_rh_rocket.jpg", tag: "TO THE MOON 🚀" },
+    { src: "/images/cocoro_banner_rh.jpg", tag: "RH CHAIN LFG 💚" },
+    { src: "/images/cocoro_meme_king_1783398518285.jpg", tag: "COCORO KING 👑" },
+    { src: "/images/cocoro_rh_archer.jpg", tag: "ROBINHOOD SAMURAI 🏹" },
     { src: "/images/cocoro_meme_diamond_paws_1783398559175.jpg", tag: "DIAMOND PAWS 💎" },
     { src: "/images/cocoro_meme_zen_1783398571659.jpg", tag: "ZEN MASTER 🌸" },
   ];
@@ -17,13 +20,13 @@ export default function MemeSection() {
   ];
 
   // Triple each row to ensure plenty of overflow for infinite scrolling
-  const list1 = [...row1, ...row1, ...row1, ...row1];
-  const list2 = [...row2, ...row2, ...row2, ...row2];
+  const list1 = [...row1, ...row1, ...row1];
+  const list2 = [...row2, ...row2, ...row2];
 
   return (
     <section id="memes" className="py-24 bg-[#050505] relative overflow-hidden">
       {/* Background radial highlight */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[300px] bg-white/[0.01] rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[300px] bg-[#00c805]/[0.01] rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 mb-16">
         <div className="text-center max-w-3xl mx-auto">

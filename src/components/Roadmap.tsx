@@ -6,28 +6,28 @@ export default function Roadmap() {
     {
       num: "PHASE 01",
       title: "Shadows Awakening",
-      subtitle: "The Genesis & Dev Exit",
+      subtitle: "The Genesis & Fair Launch",
       completed: true,
       items: [
-        "Fair launch of the $COCORO token on Uniswap.",
+        "Fair launch of the $COCORO token on Robinhood Chain.",
         "Atsuko Sato (Kabosumama) introduces Cocoro, the black Shiba Inu.",
-        "Initial deployers abandon the token contract completely.",
-        "Passionate community members band together to prevent project death.",
+        "Smart contract deployment and liquidity pool locking.",
+        "Launch of the official Web3 portal and verified socials.",
       ],
-      icon: <Sparkles size={18} className="text-emerald-400" />,
+      icon: <Sparkles size={18} className="text-[#00c805]" />,
     },
     {
       num: "PHASE 02",
-      title: "Community Takeover (CTO)",
+      title: "Ecosystem Expansion",
       subtitle: "The Rise of the Council",
       completed: true,
       items: [
-        "Official 100% Community Takeover declared & organized.",
+        "Official governance formation and decentralized marketing council established.",
         "Established a multi-signature Community Marketing Vault.",
         "Updated DexScreener, DEXTools, and verified coin profiles.",
-        "Rallied 3,000+ organic holders and achieved record-breaking volume.",
+        "Rallied 3,000+ organic holders on Robinhood Chain and achieved record volume.",
       ],
-      icon: <Shield size={18} className="text-emerald-400" />,
+      icon: <Shield size={18} className="text-[#00c805]" />,
     },
     {
       num: "PHASE 03",
@@ -60,7 +60,7 @@ export default function Roadmap() {
   return (
     <section id="roadmap" className="py-24 bg-[#0a0a0c] relative overflow-hidden">
       {/* Background ambient lighting */}
-      <div className="absolute top-1/2 left-0 w-[450px] h-[450px] bg-white/[0.01] rounded-full blur-[130px] pointer-events-none" />
+      <div className="absolute top-1/2 left-0 w-[450px] h-[450px] bg-[#00c805]/[0.01] rounded-full blur-[130px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-20">
@@ -99,7 +99,7 @@ export default function Roadmap() {
           {/* Animated Vertical central line (desktop) */}
           <div className="absolute left-1/2 top-0 bottom-0 w-[1px] bg-white/5 -translate-x-1/2 hidden md:block" />
           <motion.div 
-            className="absolute left-1/2 top-0 w-[1px] bg-gradient-to-b from-emerald-500 via-white/40 to-transparent -translate-x-1/2 hidden md:block"
+            className="absolute left-1/2 top-0 w-[1px] bg-gradient-to-b from-[#00c805] via-white/40 to-transparent -translate-x-1/2 hidden md:block"
             initial={{ height: 0 }}
             whileInView={{ height: "100%" }}
             viewport={{ once: true }}
@@ -125,11 +125,11 @@ export default function Roadmap() {
                         viewport={{ once: true }}
                         transition={{ type: "spring", stiffness: 300, delay: idx * 0.15 }}
                       >
-                        <CheckCircle size={14} className="text-emerald-400 fill-emerald-400/10" />
+                        <CheckCircle size={14} className="text-[#00c805] fill-[#00c805]/10" />
                       </motion.div>
                     ) : (
                       <motion.div 
-                        className="w-2.5 h-2.5 rounded-full bg-white/20"
+                        className="w-2.5 h-2.5 rounded-full bg-[#00c805]/30 animate-pulse"
                         animate={{ scale: [1, 1.2, 1] }}
                         transition={{ duration: 2, repeat: Infinity }}
                       />
@@ -143,7 +143,7 @@ export default function Roadmap() {
                   <motion.div
                     className={`flex-1 rounded-2xl p-6 sm:p-8 border transition-all relative overflow-hidden group bg-gradient-to-b ${
                       p.completed 
-                        ? "border-emerald-500/10 bg-emerald-500/[0.01] hover:border-emerald-500/30" 
+                        ? "border-[#00c805]/10 bg-[#00c805]/[0.01] hover:border-[#00c805]/30" 
                         : "border-white/5 bg-white/[0.01] hover:border-white/15"
                     }`}
                     initial={{ opacity: 0, x: isEven ? -45 : 45 }}
@@ -154,13 +154,13 @@ export default function Roadmap() {
                   >
                     {/* Glowing highlight for active phase */}
                     {!p.completed && idx === 2 && (
-                      <div className="absolute -top-10 -right-10 w-24 h-24 bg-white/[0.02] rounded-full blur-xl group-hover:bg-white/[0.04] transition-all" />
+                      <div className="absolute -top-10 -right-10 w-24 h-24 bg-[#00c805]/[0.02] rounded-full blur-xl group-hover:bg-[#00c805]/[0.04] transition-all" />
                     )}
 
                     {/* Progress indicator ribbon */}
                     <div className="absolute top-0 right-0 px-4 py-1 rounded-bl-xl bg-white/5 border-l border-b border-white/10 font-mono text-[9px] text-gray-400 uppercase tracking-widest flex items-center gap-1">
                       {p.completed ? (
-                        <span className="text-emerald-400 font-bold flex items-center gap-1">
+                        <span className="text-[#00c805] font-bold flex items-center gap-1">
                           ● COMPLETED
                         </span>
                       ) : (

@@ -10,9 +10,11 @@ import Roadmap from "./components/Roadmap";
 import HowToBuy from "./components/HowToBuy";
 import Chart from "./components/Chart";
 import Footer from "./components/Footer";
+import WelcomeScreen from "./components/WelcomeScreen";
 
 export default function App() {
   const [lastBarkTime, setLastBarkTime] = useState(0);
+  const [showWelcome, setShowWelcome] = useState(true);
 
   // High-fidelity web audio bark synthesizer
   // Generates organic Shiba bark sounds directly in the browser's sandbox
@@ -79,6 +81,14 @@ export default function App() {
 
   return (
     <div className="bg-[#050505] min-h-screen text-white font-sans selection:bg-white selection:text-[#050505] scroll-smooth antialiased relative">
+      {/* Interactive 5-Scroll Welcome Intro overlay */}
+      {showWelcome && (
+        <WelcomeScreen 
+          onComplete={() => setShowWelcome(false)} 
+          onPlayBark={playBarkSound} 
+        />
+      )}
+
       {/* Animated Ambient Background Glows */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
         <div className="absolute top-[-10%] left-[-10%] w-[60%] h-[60%] bg-[#0d0d15] rounded-full blur-[150px] opacity-60 animate-pulse" style={{ animationDuration: "12s" }} />
@@ -110,7 +120,7 @@ export default function App() {
         {/* Merchandise Boutique */}
         <Merchandise />
 
-        {/* CTO Roadmap & Milestones */}
+        {/* Official Roadmap & Milestones */}
         <Roadmap />
 
         {/* Simple How to buy steps */}
