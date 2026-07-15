@@ -25,7 +25,7 @@ export default function Navbar({ onPlayBark }: NavbarProps) {
     { name: "Journey", href: "#journey" },
     { name: "Tokenomics", href: "#tokenomics" },
     { name: "Memes", href: "#memes" },
-    { name: "Merchandise", href: "#merch" },
+    // { name: "Merchandise", href: "#merch" },
     { name: "Roadmap", href: "#roadmap" },
     { name: "How to Buy", href: "#how-to-buy" },
     { name: "Live Chart", href: "#chart" },

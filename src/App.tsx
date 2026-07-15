@@ -5,7 +5,7 @@ import About from "./components/About";
 import Journey from "./components/Journey";
 import Tokenomics from "./components/Tokenomics";
 import MemeSection from "./components/MemeSection";
-import Merchandise from "./components/Merchandise";
+// import Merchandise from "./components/Merchandise";
 import Roadmap from "./components/Roadmap";
 import HowToBuy from "./components/HowToBuy";
 import Chart from "./components/Chart";
@@ -118,7 +118,7 @@ export default function App() {
         <MemeSection />
 
         {/* Merchandise Boutique */}
-        <Merchandise />
+        {/* <Merchandise /> */}
 
         {/* Official Roadmap & Milestones */}
         <Roadmap />
