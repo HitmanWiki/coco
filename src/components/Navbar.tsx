@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Menu, X, ExternalLink, TrendingUp, Send } from "lucide-react";
 // @ts-ignore
-import cocoroLogo from "../assets/images/cocoro_logo_rh_1784086237306.jpg";
+import cocoroLogo from "../assets/images/cocoro_logo_rh_1784086237306.png";
 
 interface NavbarProps {
   onPlayBark: () => void;

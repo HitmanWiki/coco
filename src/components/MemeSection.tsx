@@ -3,20 +3,20 @@ import { Image, Layers, Sparkles } from "lucide-react";
 
 export default function MemeSection() {
   const row1 = [
-    { src: "/images/cocoro_logo_rh.jpg", tag: "ROBINHOOD MASCOT 🏹" },
-    { src: "/images/cocoro_rh_rocket.jpg", tag: "TO THE MOON 🚀" },
-    { src: "/images/cocoro_banner_rh.jpg", tag: "RH CHAIN LFG 💚" },
-    { src: "/images/cocoro_meme_king_1783398518285.jpg", tag: "COCORO KING 👑" },
-    { src: "/images/cocoro_rh_archer.jpg", tag: "ROBINHOOD SAMURAI 🏹" },
-    { src: "/images/cocoro_meme_diamond_paws_1783398559175.jpg", tag: "DIAMOND PAWS 💎" },
-    { src: "/images/cocoro_meme_zen_1783398571659.jpg", tag: "ZEN MASTER 🌸" },
+    { src: "/images/cocoro_logo_rh_1784086237306.png", tag: "ROBINHOOD MASCOT 🏹" },
+    { src: "/images/cocoro_rh_rocket_1784087032469.jpg", tag: "TO THE MOON 🚀" },
+    { src: "/images/cocoro_banner_rh_1784086257258.jpg", tag: "RH CHAIN LFG 💚" },
+    { src: "/images/cocoro_meme_king_new_1784088445076.jpg", tag: "COCORO KING 👑" },
+    { src: "/images/cocoro_rh_archer_1784087015492.jpg", tag: "ROBINHOOD SAMURAI 🏹" },
+    { src: "/images/cocoro_meme_diamond_paws_new_1784088463954.jpg", tag: "DIAMOND PAWS 💎" },
+    { src: "/images/cocoro_meme_zen_new_1784088487100.jpg", tag: "ZEN MASTER 🌸" },
   ];
 
   const row2 = [
     { src: "/images/cocoro_feed_nature_new_1784088421717.jpg", tag: "CHERRY BLOSSOM 💮" },
     { src: "/images/cocoro_feed_cute_new_1784088353161.jpg", tag: "HAPPY SMILE 😊" },
-    { src: "/images/cocoro_feed_owner_new_1783398621883.jpg", tag: "LOVING FAMILY 💖" },
-    { src: "/images/cocoro_feed_sleepy_1783398633334.jpg", tag: "COZY NAP 💤" },
+    { src: "/images/cocoro_feed_owner_new_1784088376630.jpg", tag: "LOVING FAMILY 💖" },
+    { src: "/images/cocoro_feed_sleepy_new_1784088399065.jpg", tag: "COZY NAP 💤" },
   ];
 
   // Triple each row to ensure plenty of overflow for infinite scrolling

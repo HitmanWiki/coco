@@ -23,7 +23,7 @@ export default function Merchandise() {
       name: "COCORO Sovereign Hoodie",
       desc: "An ultra-premium heavy weight, drop-shoulder cotton hoodie. Features gold-stitched embroidery of the legendary Black Shiba in Robinhood archer gear.",
       priceUSD: 49.99,
-      image: "/images/cocoro_rh_hoodie.jpg",
+      image: "/images/cocoro_rh_hoodie_1784087375566.jpg",
       rating: 5,
     },
     {
@@ -31,7 +31,7 @@ export default function Merchandise() {
       name: "COCORO Shadow Baseball Cap",
       desc: "Minimalist, unstructured 6-panel washed cotton cap. Styled with an exquisite custom-knit green arrow crest.",
       priceUSD: 24.99,
-      image: "/images/cocoro_rh_cap.jpg",
+      image: "/images/cocoro_rh_cap_1784087391378.jpg",
       rating: 4.9,
     },
     {
@@ -39,7 +39,7 @@ export default function Merchandise() {
       name: "COCORO Zen Matte Mug",
       desc: "Heavyweight ceramic mug with a custom satin-matte glaze. Adorned with a beautiful glowing neon archer portrait of Cocoro.",
       priceUSD: 18.99,
-      image: "/images/cocoro_rh_mug.jpg",
+      image: "/images/cocoro_rh_mug_1784087406680.jpg",
       rating: 5,
     },
     {
@@ -47,7 +47,7 @@ export default function Merchandise() {
       name: "COCORO Eclipse Stainless Tumbler",
       desc: "A double-wall insulated matte black tumbler featuring a beautiful laser-etched minimalist green portrait of Cocoro.",
       priceUSD: 29.99,
-      image: "/images/cocoro_rh_tumbler.jpg",
+      image: "/images/cocoro_rh_tumbler_1784087423277.jpg",
       rating: 5,
     },
     {
@@ -55,7 +55,7 @@ export default function Merchandise() {
       name: "COCORO Cyberpunk Street Tee",
       desc: "Crafted with premium heavy-weight cotton. Showcases a high-contrast neon green Robinhood streetwear graphic print of Cocoro.",
       priceUSD: 34.99,
-      image: "/images/cocoro_rh_tee.jpg",
+      image: "/images/cocoro_rh_tee_1784087439177.jpg",
       rating: 4.9,
     },
     {
@@ -63,7 +63,7 @@ export default function Merchandise() {
       name: "COCORO Kawaii Mascot Plushie",
       desc: "The ultimate desk companion. An adorable, highly detailed custom-embroidered plush toy of the beloved Black Shiba with a tiny archer cowl.",
       priceUSD: 39.99,
-      image: "/images/cocoro_rh_plushie.jpg",
+      image: "/images/cocoro_rh_plushie_1784087455338.jpg",
       rating: 5,
     },
   ];

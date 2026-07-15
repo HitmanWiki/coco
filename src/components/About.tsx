@@ -151,7 +151,7 @@ export default function About({ onPlayBark }: AboutProps) {
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full bg-white/10 overflow-hidden border border-white/15">
                     <img 
-                      src="/images/cocoro_logo_rh.jpg" 
+                      src="/images/cocoro_logo_rh_1784086237306.png" 
                       alt="Kabosumama Profile" 
                       className="w-full h-full object-cover"
                       referrerPolicy="no-referrer"
@@ -177,13 +177,13 @@ export default function About({ onPlayBark }: AboutProps) {
                     date: "July 2024"
                   },
                   {
-                    src: "/images/cocoro_feed_owner_new_1783398621883.jpg",
+                    src: "/images/cocoro_feed_owner_new_1784088376630.jpg",
                     caption: "A sunny stroll with my beloved Cocoro under the neighborhood cherry blossoms. 🌸🐕",
                     likes: "189.5K",
                     date: "April 2025"
                   },
                   {
-                    src: "/images/cocoro_feed_sleepy_1783398633334.jpg",
+                    src: "/images/cocoro_feed_sleepy_new_1784088399065.jpg",
                     caption: "Sweet dreams, Cocoro. Our home is complete again. 😴💖",
                     likes: "312.8K",
                     date: "September 2024"

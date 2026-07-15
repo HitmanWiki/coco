@@ -27,7 +27,7 @@ export default function Journey() {
       title: "Playtime with Neiro",
       date: "Late 2024",
       desc: "Cocoro and Neiro playing together in Atsuko Sato's beautiful garden, completing the Holy Trinity of dog culture alongside Kabosu.",
-      thumbnail: "/images/cocoro_feed_owner_new_1783398621883.jpg",
+      thumbnail: "/images/cocoro_feed_owner_new_1784088376630.jpg",
       subtitles: [
         "Cocoro rolls on the grass, teasing his sister Neiro with a squeaky toy.",
         "Sato-san watches happily, sharing this beautiful memory on her blog.",
@@ -40,7 +40,7 @@ export default function Journey() {
       title: "Ascension to Robinhood Chain",
       date: "2025 - 2026",
       desc: "Cocoro's spirit transitions to the decentralized world of Web3, sparking an organic, fair-launched token deployment on Robinhood Chain that renounced contract ownership and locked liquidity forever.",
-      thumbnail: "/images/cocoro_rh_rocket.jpg",
+      thumbnail: "/images/cocoro_rh_rocket_1784087032469.jpg",
       subtitles: [
         "The $COCORO token is fair launched on Robinhood Chain...",
         "With complete decentralization, a passionate global community unites to support $COCORO.",

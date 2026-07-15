@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import { Copy, Check, Shield, Flame, Percent, Wallet, ArrowUpRight } from "lucide-react";
 // @ts-ignore
-import cocoroLogo from "../assets/images/cocoro_logo_rh_1784086237306.jpg";
+import cocoroLogo from "../assets/images/cocoro_logo_rh_1784086237306.png";
 
 interface HeroProps {
   onPlayBark: () => void;

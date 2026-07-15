@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ArrowDown, ArrowUp, Sparkles, Volume2, ShieldAlert } from "lucide-react";
 // @ts-ignore
-import cocoroLogo from "../assets/images/cocoro_logo_rh_1784086237306.jpg";
+import cocoroLogo from "../assets/images/cocoro_logo_rh_1784086237306.png";
 
 interface WelcomeScreenProps {
   onComplete: () => void;
