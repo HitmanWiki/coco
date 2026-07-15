@@ -146,7 +146,7 @@ export default function Hero({ onPlayBark }: HeroProps) {
                 </div>
                 <div className="flex flex-col text-left">
                   <span className="text-[10px] text-gray-500 font-mono uppercase">TAXES</span>
-                  <span className="text-sm text-gray-200 font-display font-semibold">0% Buy / Sell</span>
+                  <span className="text-sm text-gray-200 font-display font-semibold">1% Buy / Sell</span>
                 </div>
               </div>
 

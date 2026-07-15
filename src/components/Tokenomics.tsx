@@ -5,14 +5,14 @@ export default function Tokenomics() {
   const metrics = [
     {
       title: "TOTAL SUPPLY",
-      value: "1,000,000,000",
+      value: "420,690,000,000",
       sub: "1 Billion Fixed Supply",
       desc: "No mint function. No inflation. Fully locked supply allocation on the Robinhood Chain network.",
       icon: <Coins size={20} className="text-[#00c805]" />,
     },
     {
       title: "BUY / SELL TAX",
-      value: "0% / 0%",
+      value: "1% / 1%",
       sub: "Zero Slippage Burden",
       desc: "No fees taken on trading. Pure community buying and selling. Maximum trade efficiency on DEXs.",
       icon: <Star size={20} className="text-[#00c805]" />,
